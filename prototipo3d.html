@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulação 3D</title>
+  <link rel="stylesheet" href="prototipo3d.css">
+</head>
+<body>
+
+<h1>Simulação 3D - Ferramenta Vibratória</h1>
+<h2>Equipe GambiarraTech</h2>
+
+<div id="container"></div>
+
+<div class="controls">
+  <label>Frequência (Hz):</label>
+  <input type="range" id="freq" min="0" max="500" value="0">
+  <span id="value">0 Hz</span>
+  <p id="status">Ajuste a frequência</p>
+</div>
+
+<label>Transparência do tubo:</label>
+<input type="range" id="opacity" min="0" max="100" value="100">
+<span id="opacityValue">100%</span>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="prototipo3d.js"></script>
+
+</body>
+</html>
